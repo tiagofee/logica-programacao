@@ -1,26 +1,32 @@
-programa//2.4
+programa
+
+	/*
+	 * Autor: Tiago Ferreira 
+	 * Exercício: Calcular o peso ideal de uma pessoa do sexo masculino ou feminino
+	 */
+
 {
 	funcao inicio()
 	{
-	 real alt
-	 real p
+	 real altura
+	 real peso
 	 caracter sexo
 
 	 escreva("Informe sua altura: ")
-	 leia(alt)
+	 leia(altura)
 
 	 escreva("Informe seu sexo: (M/F) ")
 	 leia(sexo)
 
 	 escolha(sexo){
 	 	caso 'M': 
-	 		p = (72.7 * alt) - 58
-	 		escreva("Você é do sexo ",sexo," e seu peso ideal é ",p)
+	 		peso = (72.7 * altura) - 58
+	 		escreva("Você é do sexo ",sexo," e seu peso ideal é ",peso)
 	 		pare
 	 	
 	 	caso 'F':
-	 		p = (62.1 * alt) - 44.7
-	 		escreva("Você é do sexo ",sexo," e seu peso ideal é ",p)
+	 		peso = (62.1 * altura) - 44.7
+	 		escreva("Você é do sexo ",sexo," e seu peso ideal é ",peso)
 	 		pare
 	 	caso contrario:
 	 		escreva("Erro. Informe os dados novamente!")
@@ -34,7 +40,7 @@ programa//2.4
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 13; 
+ * @POSICAO-CURSOR = 240; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
